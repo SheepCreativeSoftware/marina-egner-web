@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Website of Sheep CS">
+	<meta name="keywords" content="Sheep CS">
+	<meta name="author" content="Marina Egner">
+
+	<title>Marina Egner</title>
+	<link href="style/styles.css" rel="stylesheet">
+	<link rel="icon" href="images/SheepLogoV4GrauTransparent.png" type="image/png">
+	<link rel="icon" href="images/SheepLogoV4GrauTransparent.svg" type="image/png">
+	<script type="module" src="js/app.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const copyright = document.getElementById('copyright')
+			copyright.innerText = copyright.innerText.replace('2023', '2023-'+new Date().getFullYear());
+		
+			const navBarElement = document.getElementById('nav-bar');
+			window.addEventListener('scroll', function() {
+				if(window.scrollY > 70) navBarElement.classList.add('nav-on-scroll');
+				else navBarElement.classList.remove('nav-on-scroll');
+			});
+
+			
+			const menuButtonElement = document.getElementById('hamburger-link');
+			const menuBarElement = document.getElementById('main-nav');
+			menuButtonElement.addEventListener('click', (_event) => {
+				menuButtonElement.classList.toggle('active');
+				menuBarElement.classList.toggle('active');
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="header-container">
+		<header id="nav-bar" class="">
+			<div class="logo-container">
+				<a class="logo-link" href="https://sheepcs.de"><img class="logo" src="images/SheepLogoV4GrauTransparent.svg" alt="Sheep CS Logo"></a>
+				<h1 class="logo-text">Marina Egner</h1>
+			</div>
+			<nav id="main-nav">
+				<a class="nav-link" href="https://blog.en.sheepcs.de/about">About</a>
+				<a class="nav-link" href="https://blog.en.sheepcs.de/">Blog</a>
+				<a class="nav-link" href="https://github.com/magraina">GitHub</a>
+				<a class="nav-link" href="imprint.html">Imprint</a>
+				<a class="default-btn white-btn" href="mailto:hello@sheepcs.de">Contact</a>
+			</nav>
+			<a id="hamburger-link" href="javascript:void(0);"><img id="hamburger-logo" src="images/hamburger.svg"></a>
+		</header>
+		<div class="headline">
+			<h1 class="headline-title"><span id="headline-dynamic" data-text="I'm Marina Egner"></span><span class="headline-blink">&nbsp;&nbsp;</span></h1>
+			<span class="headline-quote"><span id="headline-quote-dynamic" data-text="&quot;It is not knowledge, but the act of learning, not possession but the act of getting there, which generates the greatest satisfaction&quot; - C.F. Gauss"></span><span class="headline-blink hidden">&nbsp;&nbsp;</span></span>
+		</div>
+	</div>
+
+	<main>
+		<article>
+			<div class="text-container">
+				<h3>Welcome to my site!</h3>
+				<span>Sheep Creative Studios that's me - Marina Egner</span>
+				<span>Under the pseudonym Sheep Creative Studios, I run a web space, program various software and run a blog.</span>
+				<span>Below you will find further links</span>
+				<div class="button-container">
+					<a class="default-btn white-btn" href="https://blog.en.sheepcs.de/about">About me</a>
+					<a class="default-btn border-btn disabled" href="https://marina-egner.sheepcs.de">My portfolio</a>
+				</div>
+			</div>
+			<figure class="image-container">
+				<img src="images/martin-bisof-xsIOCYmlI1g-unsplash.jpg" alt="Schafe auf der Weide">
+				<figcaption>Photo by <a href="https://unsplash.com/de/@mbisof?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Martin Bisof</a> on<a href="https://unsplash.com/de/fotos/schafherde-auf-wiese-xsIOCYmlI1g?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
+			</figure>
+		</article>
+
+		<article>
+			<div class="text-container">
+				<h3>My personal blog</h3>
+				<span>My blog is about all kinds of things about my life.</span>
+				<span>I love discovering new places - I enjoy traveling and discovering parts of this world. Apart from that, it revolves around the topic of problem solving and programming.</span>
+				<span>Feel free to stop by!</span>
+				<div class="button-container">
+					<a class="default-btn white-btn" href="https://blog.en.sheepcs.de">To the Blog</a>
+					<a class="default-btn border-btn" href="https://blog.sheepcs.de">Blog in German</a>
+				</div>
+			</div>
+			<figure class="image-container">
+				<img src="images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg" alt="Jemand schreibt an einem Laptop">
+				<figcaption>Photo by <a href="https://unsplash.com/de/@glenncarstenspeters?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Glenn Carstens-Peters</a> on<a href="https://unsplash.com/de/fotos/person-die-das-macbook-pro-verwendet-npxXWgQ33ZQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
+			</figure>
+		</article>
+
+		<article>
+			<div class="text-container">
+				<h3>My coding projects</h3>
+				<span>I love developing various software tools.</span>
+				<span>This ranges from projects in C/C++ in conjunction with Arduino & Co - to smaller NPM modules for Node.js - to front and backend web applications.</span>
+				<span>Below you will find my code repositories.</span>
+				<div class="button-container">
+					<a class="default-btn white-btn" href="https://github.com/magraina">GitHub Profile</a>
+					<a class="default-btn border-btn" href="https://github.com/SheepCreativeSoftware">GitHub Repos</a>
+				</div>
+			</div>
+			<figure class="image-container">
+				<img src="images/arnold-francisca-f77Bh3inUpE-unsplash.jpg" alt="Code-Editor auf einem Laptop">
+				<figcaption>Photo by <a href="https://unsplash.com/de/@clark_fransa?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Arnold Francisca</a> on<a href="https://unsplash.com/de/@clark_fransa?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
+			</figure>
+		</article>
+	</main>
+	
+	<footer>
+		<nav>
+			<span id="copyright">Sheep CS &copy; 2023</span>
+			<ul>
+				<li><a href="">German</a></li>
+				<li><a href="imprint.html">Imprint</a></li>
+				<li><a href="privacy-policy.html">Privacy Policy</a></li>
+			</ul>
+			<span id="copyright">Created by M.Egner</span>
+		</nav>
+		<div class="logo-conatiner">
+			<a class="logo-link" href="https://sheepcs.de"><img class="logo" src="images/SheepLogoV4GrauTransparent.svg" alt="Sheep CS Logo"></a>
+			<div class="social-container">
+				<a href="https://www.instagram.com/magraina/" target="_blank"><img class="social-logo" src="images/Instagram.svg" alt="Instagram Logo"></a>
+				<a href="https://www.linkedin.com/in/marina-egner-93193818a" target="_blank"><img class="social-logo" src="images/LinkedIn.png" alt="LinkedIn Logo"></a>
+				<a href="https://www.facebook.com/marina.egner.9/" target="_blank"><img class="social-logo" src="images/Facebook.png" alt="Facebook Logo"></a>
+			</div>
+			<a class="default-btn accent-btn" href="https://plesk.sheepcs.de:8443">Login</a>
+		</div>
+	</footer>
+</body>
+</html>

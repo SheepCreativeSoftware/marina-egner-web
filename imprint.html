@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Imprint of Sheep CS">
+	<meta name="keywords" content="Sheep CS, Imprint">
+	<meta name="author" content="Marina Egner">
+
+	<title>Sheep CS - Imprint</title>
+	<link href="../style/styles.css" rel="stylesheet">
+	<link rel="icon" href="../images/SheepLogoV4GrauTransparent.png" type="image/png">
+	<link rel="icon" href="../images/SheepLogoV4GrauTransparent.svg" type="image/png">
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const copyright = document.getElementById('copyright')
+			copyright.innerText = copyright.innerText.replace('2023', '2023-'+new Date().getFullYear());
+		
+			const navBarElement = document.getElementById('nav-bar');
+			window.addEventListener('scroll', function() {
+				if(window.scrollY > 70) navBarElement.classList.add('nav-on-scroll');
+				else navBarElement.classList.remove('nav-on-scroll');
+			});
+
+			
+			const menuButtonElement = document.getElementById('hamburger-link');
+			const menuBarElement = document.getElementById('main-nav');
+			menuButtonElement.addEventListener('click', (_event) => {
+				menuButtonElement.classList.toggle('active');
+				menuBarElement.classList.toggle('active');
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="header-container not-start">
+		<header id="nav-bar" class="not-start">
+			<div class="logo-container">
+				<a class="logo-link" href="https://sheepcs.de"><img class="logo" src="../images/SheepLogoV4GrauTransparent.svg" alt="Sheep CS Logo"></a>
+				<h1 class="logo-text">Sheep CS</h1>
+			</div>
+			<nav id="main-nav">
+				<a class="nav-link" href="https://blog.en.sheepcs.de/about">About</a>
+				<a class="nav-link" href="https://blog.en.sheepcs.de/">Blog</a>
+				<a class="nav-link" href="https://github.com/magraina">GitHub</a>
+				<a class="nav-link" href="imprint.html">Imprint</a>
+				<a class="default-btn white-btn" href="mailto:hello@sheepcs.de">Contact</a>
+			</nav>
+			<a id="hamburger-link" href="javascript:void(0);"><img id="hamburger-logo" src="images/hamburger.svg"></a>
+		</header>
+	</div>
+
+	<div id="main">
+		<main class="not-start">
+			<h2>Imprint</h2>
+			<h3>Information in accordance with Section 5 TMG</h3>
+			<p>
+				Marina Egner<br>
+				Kreuzberger Straße 50<br>
+				64646 Heppenheim<br>
+			<br>
+			Contact email:<br>
+			<a href="mailto:hello@sheepcs.de">hello@sheepcs.de</a>
+			</p>
+			<h3>Disclaimer</h3>
+			<h3>Accountability for content</h3>
+			<p>
+				The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents' accuracy, completeness or topicality. According to statutory provisions, we are furthermore responsible for our own content on these web pages. In this matter, please note that we are not obliged to monitor the transmitted or saved information of third parties, or investigate circumstances pointing to illegal activity. Our obligations to remove or block the use of information under generally applicable laws remain unaffected by this as per §§ 8 to 10 of the Telemedia Act (TMG).
+			</p>
+			<h3>Accountability for links</h3>
+			<p>
+				Our offer contains links to external third-party websites over whose content we have no influence. We therefore cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not apparent at the time of linking.
+				<br><br>
+				However, permanent control of the content of the linked pages is unreasonable without concrete evidence of a legal violation. If we become aware of any legal violations, we will immediately remove such links.</p>
+			<h3>Copyright</h3>
+			<p>
+				Our web pages and their contents are subject to German copyright law. Unless expressly permitted by law, every form of utilizing, reproducing or processing works subject to copyright protection on our web pages requires the prior consent of the respective owner of the rights. Individual reproductions of a work are only allowed for private use. The materials from these pages are copyrighted and any unauthorized use may violate copyright laws.
+				<br><br>
+				If the content on this site was not created by the operator, the copyrights of third parties are respected. In particular contents of third parties are marked as such. Should you nevertheless become aware of a copyright infringement, we ask that you notify us accordingly. If we become aware of any legal violations, we will immediately remove such content.
+			</p>
+		</main>
+	</div>
+		
+	<footer>
+		<nav>
+			<span id="copyright">Sheep CS &copy; 2023</span>
+			<ul>
+				<li><a href="../">German</a></li>
+				<li><a href="imprint.html">Imprint</a></li>
+				<li><a href="privacy-policy.html">Privacy Policy</a></li>
+			</ul>
+			<span id="copyright">Created by M.Egner</span>
+		</nav>
+		<div class="logo-conatiner">
+			<a class="logo-link" href="https://sheepcs.de"><img class="logo" src="../images/SheepLogoV4GrauTransparent.svg" alt="Sheep CS Logo"></a>
+			<div class="social-container">
+				<a href="https://www.instagram.com/magraina/" target="_blank"><img class="social-logo" src="../images/Instagram.svg" alt="Instagram Logo"></a>
+				<a href="https://www.linkedin.com/in/marina-egner-93193818a" target="_blank"><img class="social-logo" src="../images/LinkedIn.png" alt="LinkedIn Logo"></a>
+				<a href="https://www.facebook.com/marina.egner.9/" target="_blank"><img class="social-logo" src="../images/Facebook.png" alt="Facebook Logo"></a>
+			</div>
+			<a class="default-btn accent-btn" href="https://plesk.sheepcs.de:8443">Login</a>
+		</div>
+	</footer>
+</body>
+</html>
