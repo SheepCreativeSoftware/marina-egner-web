@@ -13,120 +13,178 @@
 	<link rel="icon" href="images/SheepLogoV4GrauTransparent.png" type="image/png">
 	<link rel="icon" href="images/SheepLogoV4GrauTransparent.svg" type="image/png">
 	<script type="module" src="js/app.js"></script>
-	<script>
-		document.addEventListener('DOMContentLoaded', () => {
-			const copyright = document.getElementById('copyright')
-			copyright.innerText = copyright.innerText.replace('2023', '2023-'+new Date().getFullYear());
-		
-			const navBarElement = document.getElementById('nav-bar');
-			window.addEventListener('scroll', function() {
-				if(window.scrollY > 70) navBarElement.classList.add('nav-on-scroll');
-				else navBarElement.classList.remove('nav-on-scroll');
-			});
-
-			
-			const menuButtonElement = document.getElementById('hamburger-link');
-			const menuBarElement = document.getElementById('main-nav');
-			menuButtonElement.addEventListener('click', (_event) => {
-				menuButtonElement.classList.toggle('active');
-				menuBarElement.classList.toggle('active');
-			});
-		});
-	</script>
 </head>
 <body>
 	<div class="header-container">
 		<header id="nav-bar" class="">
 			<div class="logo-container">
-				<a class="logo-link" href="https://sheepcs.de"><img class="logo" src="images/SheepLogoV4GrauTransparent.svg" alt="Sheep CS Logo"></a>
-				<h1 class="logo-text">Marina Egner</h1>
+				<a class="logo-link" href="https://marina-egner.sheepcs.de">
+					<h2 class="logo-text"><span class="logo-brace">&lbrace;</span> Marina Egner <span class="logo-brace">&rbrace;</span></h2>
+				</a>
 			</div>
 			<nav id="main-nav">
-				<a class="nav-link" href="https://blog.en.sheepcs.de/about">About</a>
-				<a class="nav-link" href="https://blog.en.sheepcs.de/">Blog</a>
-				<a class="nav-link" href="https://github.com/magraina">GitHub</a>
-				<a class="nav-link" href="imprint.html">Imprint</a>
-				<a class="default-btn white-btn" href="mailto:hello@sheepcs.de">Contact</a>
+				<a class="nav-link" href="#about">About</a>
+				<a class="nav-link" href="#experience">Experience</a>
+				<a class="nav-link" href="#projects">Projects</a>
+				<a class="default-btn accent-btn" href="#contact">Contact</a>
 			</nav>
-			<a id="hamburger-link" href="javascript:void(0);"><img id="hamburger-logo" src="images/hamburger.svg"></a>
 		</header>
 		<div class="headline">
-			<h1 class="headline-title"><span id="headline-dynamic" data-text="I'm Marina Egner"></span><span class="headline-blink">&nbsp;&nbsp;</span></h1>
-			<span class="headline-quote"><span id="headline-quote-dynamic" data-text="&quot;It is not knowledge, but the act of learning, not possession but the act of getting there, which generates the greatest satisfaction&quot; - C.F. Gauss"></span><span class="headline-blink hidden">&nbsp;&nbsp;</span></span>
+			<h1 class="headline-title">
+				<span id="headline-dynamic-accent" data-text="Hi, my name is"></span><span class="headline-blink ">&nbsp;</span><br>
+				<span id="headline-dynamic-normal" data-text="Marina Egner."></span><span class="headline-blink hidden">&nbsp;</span>
+			</h1>
+			<span class="headline-quote"><span id="headline-quote-dynamic" data-text="I love to build things on the web."></span><span class="headline-blink hidden">&nbsp;</span></span>
 		</div>
 	</div>
 
 	<main>
-		<article>
-			<div class="text-container">
-				<h3>Welcome to my site!</h3>
-				<span>Sheep Creative Studios that's me - Marina Egner</span>
-				<span>Under the pseudonym Sheep Creative Studios, I run a web space, program various software and run a blog.</span>
-				<span>Below you will find further links</span>
-				<div class="button-container">
-					<a class="default-btn white-btn" href="https://blog.en.sheepcs.de/about">About me</a>
-					<a class="default-btn border-btn disabled" href="https://marina-egner.sheepcs.de">My portfolio</a>
-				</div>
+		<section id="about">
+			<div class="article-heading">
+				<h2 >About me</h2>
+				<hr>
 			</div>
-			<figure class="image-container">
-				<img src="images/martin-bisof-xsIOCYmlI1g-unsplash.jpg" alt="Schafe auf der Weide">
-				<figcaption>Photo by <a href="https://unsplash.com/de/@mbisof?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Martin Bisof</a> on<a href="https://unsplash.com/de/fotos/schafherde-auf-wiese-xsIOCYmlI1g?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
-			</figure>
-		</article>
+			<article>
+				<p>
+					Programming and problem solving has always somehow accompanied my life, both privately and professionally.
+					Probably around of 2008, I started to create my first batch scripts and I gained my first experience in the web by exploring the code of web pages.
+					Beginning in 2010 I started to become a electrician in building automation where I could build up a great knowledge in programming PLC's and micro-controllers.
+					In 2013 I decided to try my hand at creating <a href="https://mch-huelben.de">my first website</a> and slowly I tumbled head first into the rabbit hole of coding and development.
+					However back then my love for web development has not yet fully developed.
+				</p>
+				<p>
+					Fast-forward to 2019, on my <a href="#experience">current job in tech support</a>, I had the opportunity to again focus on web based technologies, while creating software components and extension for some products of our company.
+					And it should not take long until I was fully in love with it. 
+					So, I started to dig in deeper and gain experience by creating front-end, back-end and web based desktop applications.
+				</p>
+				<p>
+					Here are a few technologies I've been working with recently:
+				</p>
+				<div class="tech-stack-container">
+					<ul>
+						<li><a href="https://www.google.com/search?q=JavaScript">JavaScript (ES6+)</a></li>
+						<li><a href="https://www.google.com/search?q=node.js">Node.js</a></li>
+						<li><a href="https://www.google.com/search?q=express.js">Express.js</a></li>
+					</ul>
+					<ul>
+						<li><a href="https://www.google.com/search?q=TypeScript">TypeScript</a></li>
+						<li><a href="https://www.google.com/search?q=Electron.js">Electron.js</a></li>
+						<li><a href="https://www.google.com/search?q=SQL">SQL</a></li>
+					</ul>
+				</div>
+			</article>
+		</section>
 
-		<article>
-			<div class="text-container">
-				<h3>My personal blog</h3>
-				<span>My blog is about all kinds of things about my life.</span>
-				<span>I love discovering new places - I enjoy traveling and discovering parts of this world. Apart from that, it revolves around the topic of problem solving and programming.</span>
-				<span>Feel free to stop by!</span>
-				<div class="button-container">
-					<a class="default-btn white-btn" href="https://blog.en.sheepcs.de">To the Blog</a>
-					<a class="default-btn border-btn" href="https://blog.sheepcs.de">Blog in German</a>
-				</div>
+		<section id="experience">
+			<div class="article-heading">
+				<h2>Where I've Worked</h2>
+				<hr>
 			</div>
-			<figure class="image-container">
-				<img src="images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg" alt="Jemand schreibt an einem Laptop">
-				<figcaption>Photo by <a href="https://unsplash.com/de/@glenncarstenspeters?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Glenn Carstens-Peters</a> on<a href="https://unsplash.com/de/fotos/person-die-das-macbook-pro-verwendet-npxXWgQ33ZQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
-			</figure>
-		</article>
+			<article>
+				<h3>Experienced Tech Support Professional <a href="https://saia-pcd.com/">@ SBC Deutschland GmbH</a></h3>
+				<div class="experience-container">
+					<span class="experience-date">Juli 2020 - Today</span>
+					<ul class="experience-text">
+						<li>I analyze complex hardware and software problems, develop approaches to solutions and, if necessary, involve development or product management.</li>
+						<li>I support the development department in the escalation process on troubleshooting and feature requests.</li>
+						<li>I design and develop additional customer-specific software solutions and extensions to existing products.</li>
+					</ul>
+				</div>
+			</article>
+		</section>
 
-		<article>
-			<div class="text-container">
-				<h3>My coding projects</h3>
-				<span>I love developing various software tools.</span>
-				<span>This ranges from projects in C/C++ in conjunction with Arduino & Co - to smaller NPM modules for Node.js - to front and backend web applications.</span>
-				<span>Below you will find my code repositories.</span>
-				<div class="button-container">
-					<a class="default-btn white-btn" href="https://github.com/magraina">GitHub Profile</a>
-					<a class="default-btn border-btn" href="https://github.com/SheepCreativeSoftware">GitHub Repos</a>
-				</div>
+		<section id="projects">
+			<div class="article-heading">
+				<h2>Some Things I've Built</h2>
+				<hr>
 			</div>
-			<figure class="image-container">
-				<img src="images/arnold-francisca-f77Bh3inUpE-unsplash.jpg" alt="Code-Editor auf einem Laptop">
-				<figcaption>Photo by <a href="https://unsplash.com/de/@clark_fransa?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Arnold Francisca</a> on<a href="https://unsplash.com/de/@clark_fransa?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
-			</figure>
-		</article>
+			<article>
+				<div class="project-header-container">
+					<h3>n4-simple-build <span class="accent-color">@ My Own</span></h3>
+					<a href="#">Code <span class="accent-color">@ GitHub</span></a>
+				</div>
+				<div class="project-body-container">
+					<div class="projects-content-container">
+						<span class="projects-date">Juli 2020 - Today</span>
+						<img src="images/n4-simple-build.png" alt="n4-simple-build">
+					</div>
+					<div class="projects-content-container">
+						<span><a href="#">JavaScript</a> - <a href="#">TypeScript</a> - <a href="#">Node.js</a> - <a href="#">NPM</a> - <a href="#">Niagara Supervisor</a></span>
+						<p>
+							Node.JS/NPM-module to build simple N4 Framework modules via CLI.
+							The goal was that it is simple to use without the need for an IDE or lots of deeper experience with Java or N4.
+							For simple resource modules which do not need java files or which not require a java compiler.<br>
+							<br>
+							It is also able to extract original (english) lexicon files (language specific text files) from N4 java modules and can create CSV-files for translation into different languages.
+							It can re-import translated CSV-files for building simple Lexicon modules for N4.
+						</p>
+					</div>
+				</div>
+			</article>
+
+			<article>
+				<div class="project-header-container">
+					<h3>n4-simple-build <span class="accent-color">@ My Own</span></h3>
+					<a href="#">Code <span class="accent-color">@ GitHub</span></a>
+				</div>
+				<div class="project-body-container">
+					<div class="projects-content-container">
+						<span class="projects-date">Juli 2020 - Today</span>
+						<img src="images/n4-simple-build.png" alt="n4-simple-build">
+					</div>
+					<div class="projects-content-container">
+						<span><a href="#">JavaScript</a> - <a href="#">TypeScript</a> - <a href="#">Node.js</a> - <a href="#">NPM</a> - <a href="#">Niagara Supervisor</a></span>
+						<p>
+							Node.JS/NPM-module to build simple N4 Framework modules via CLI.
+							The goal was that it is simple to use without the need for an IDE or lots of deeper experience with Java or N4.
+							For simple resource modules which do not need java files or which not require a java compiler.<br>
+							<br>
+							It is also able to extract original (english) lexicon files (language specific text files) from N4 java modules and can create CSV-files for translation into different languages.
+							It can re-import translated CSV-files for building simple Lexicon modules for N4.
+						</p>
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<section id="contact">
+			<div class="article-heading">
+				<h2>Get In Touch</h2>
+				<hr>
+			</div>
+			<article>
+				<p>
+					Although I'm <span class="accent-color">currently looking for new opportunities</span>, my inbox is always open.
+					Whether you have a question or just want to say hi, I'll try my best to get back to you!
+				</p>
+				<a class="default-btn accent-btn" href="mailto:marinafcegner@sheepcs.de">Say Hello</a>
+			</article>
+		</section>
+		
 	</main>
 	
 	<footer>
 		<nav>
-			<span id="copyright">Sheep CS &copy; 2023</span>
+			<span id="copyright">Marina Egner &copy; 2023</span>
 			<ul>
-				<li><a href="">German</a></li>
 				<li><a href="imprint.html">Imprint</a></li>
-				<li><a href="privacy-policy.html">Privacy Policy</a></li>
+				<li><a href="mailto:marinafcegner@sheepcs.de">Contact</a></li>
 			</ul>
-			<span id="copyright">Created by M.Egner</span>
+			<span id="created-by">
+				Created by M.Egner<br>
+				Inspired by <a href="https://v4.brittanychiang.com/">Brittany Chiang</a>
+			</span>
 		</nav>
 		<div class="logo-conatiner">
-			<a class="logo-link" href="https://sheepcs.de"><img class="logo" src="images/SheepLogoV4GrauTransparent.svg" alt="Sheep CS Logo"></a>
+			<a class="logo-link" href="https://marina-egner.sheepcs.de">
+				<h2 class="logo-text"><span class="logo-brace">&lbrace;</span> Marina Egner <span class="logo-brace">&rbrace;</span></h2>
+			</a>
 			<div class="social-container">
+				<a href="https://github.com/magraina" target="_blank"><img class="social-logo" src="images/github.svg" alt="GitHub Logo"></a>
 				<a href="https://www.instagram.com/magraina/" target="_blank"><img class="social-logo" src="images/Instagram.svg" alt="Instagram Logo"></a>
 				<a href="https://www.linkedin.com/in/marina-egner-93193818a" target="_blank"><img class="social-logo" src="images/LinkedIn.png" alt="LinkedIn Logo"></a>
 				<a href="https://www.facebook.com/marina.egner.9/" target="_blank"><img class="social-logo" src="images/Facebook.png" alt="Facebook Logo"></a>
 			</div>
-			<a class="default-btn accent-btn" href="https://plesk.sheepcs.de:8443">Login</a>
 		</div>
 	</footer>
 </body>
