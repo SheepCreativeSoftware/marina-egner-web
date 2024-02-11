@@ -18,6 +18,19 @@ const typeText = async (text, element, time) => {
 	}
 }
 
+const reveal = () => {
+	const reveals = document.querySelectorAll(".reveal");
+
+	for (var index = 0; index < reveals.length; index++) {
+		const windowHeight = window.innerHeight;
+		const elementTop = reveals[index].getBoundingClientRect().top;
+		const elementVisible = 150;
+
+		if (elementTop < windowHeight - elementVisible) reveals[index].classList.add("active");
+		else reveals[index].classList.remove("active");
+	}
+}
+
 const zero = 0;
 document.addEventListener('DOMContentLoaded', async () => {
 	const copyright = document.getElementById('copyright')
@@ -27,6 +40,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 	window.addEventListener('scroll', function() {
 		if(window.scrollY > 70) navBarElement.classList.add('nav-on-scroll');
 		else navBarElement.classList.remove('nav-on-scroll');
+		reveal();
 	});
 
 	if(document.getElementsByClassName('not-start').length === zero) {
@@ -50,3 +64,5 @@ document.addEventListener('DOMContentLoaded', async () => {
 		await typeText(quoteText, headlineQuoteSpan, timeForQuoteCharacter);
 	}
 });
+
+
