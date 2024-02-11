@@ -15,36 +15,36 @@
 	<script type="module" src="js/app.js"></script>
 </head>
 <body>
-	<div class="header-container">
-		<header id="nav-bar" class="">
+	<div class="header-container flex-column">
+		<header id="nav-bar" class="flex-space-center">
 			<div class="logo-container">
 				<a class="logo-link" href="https://marina-egner.sheepcs.de">
 					<h2 class="logo-text"><span class="logo-brace">&lbrace;</span> M: Egner <span class="logo-brace">&rbrace;</span></h2>
 				</a>
 			</div>
-			<nav id="main-nav">
+			<nav id="main-nav" class="flex-space-center">
 				<a class="nav-link" href="#about">About</a>
 				<a class="nav-link" href="#experience">Experience</a>
 				<a class="nav-link" href="#projects">Projects</a>
 				<a class="default-btn accent-btn" href="#contact">Contact</a>
 			</nav>
 		</header>
-		<div class="headline">
+		<div class="headline flex-column">
 			<h1 class="headline-title">
-				<span id="headline-dynamic-accent" data-text="Hi, my name is"></span><span class="headline-blink ">&nbsp;</span><br>
-				<span id="headline-dynamic-normal" data-text="Marina Egner."></span><span class="headline-blink hidden">&nbsp;</span>
+				<span id="headline-dynamic-accent" class="headline-dynamic" data-text="Hi, my name is"></span><span class="headline-blink ">&nbsp;</span><br>
+				<span class="headline-dynamic" data-text="Marina Egner."></span><span class="headline-blink hidden">&nbsp;</span>
 			</h1>
-			<span class="headline-quote"><span id="headline-quote-dynamic" data-text="I love to build things on the web."></span><span class="headline-blink hidden">&nbsp;</span></span>
+			<span class="headline-quote"><span class="headline-dynamic" data-text="I love to build things on the web."></span><span class="headline-blink hidden">&nbsp;</span></span>
 		</div>
 	</div>
 
-	<main>
-		<section id="about">
+	<main class="flex-column flex-space-center">
+		<section id="about" class="flex-column">
 			<div class="article-heading">
 				<h2 >About me</h2>
 				<hr>
 			</div>
-			<article>
+			<article class="flex-column">
 				<p>
 					Programming and problem solving has always somehow accompanied my life, both privately and professionally.
 					Probably around of 2008, I started to create my first batch scripts and I gained my first experience in the web by exploring the code of web pages.
@@ -75,12 +75,12 @@
 			</article>
 		</section>
 
-		<section id="experience">
+		<section id="experience" class="flex-column">
 			<div class="article-heading">
 				<h2>Where I've Worked</h2>
 				<hr>
 			</div>
-			<article>
+			<article class="flex-column">
 				<h3>Experienced Tech Support Professional <a href="https://www.saia-pcd.com/" target="_blank">@ SBC Deutschland GmbH</a></h3>
 				<div class="experience-container">
 					<span class="experience-date">Juli 2020 - Today</span>
@@ -92,7 +92,7 @@
 				</div>
 			</article>
 
-			<article>
+			<article class="flex-column">
 				<h3>Technical Support Specialist <a href="https://www.saia-pcd.com/" target="_blank">@ SBC Deutschland GmbH</a></h3>
 				<div class="experience-container">
 					<span class="experience-date">Juli 2019 - June 2020</span>
@@ -104,7 +104,7 @@
 				</div>
 			</article>
 
-			<article>
+			<article class="flex-column">
 				<h3>Electrician / PLC-Programmer <a href="https://schaefer-anlagentechnik.de/" target="_blank">@ Schäfer Anlagentechnik GmbH</a></h3>
 				<div class="experience-container">
 					<span class="experience-date">February 2014 - June 2019</span>
@@ -116,7 +116,7 @@
 				</div>
 			</article>
 
-			<article>
+			<article class="flex-column">
 				<h3>Education as electrician for automation <a href="https://schaefer-anlagentechnik.de/" target="_blank">@ Schäfer Anlagentechnik GmbH</a></h3>
 				<div class="experience-container">
 					<span class="experience-date">August 2010 - February 2014</span>
@@ -128,12 +128,12 @@
 			</article>
 		</section>
 
-		<section id="projects">
+		<section id="projects" class="flex-column">
 			<div class="article-heading">
 				<h2>Some Things I've Built</h2>
 				<hr>
 			</div>
-			<article>
+			<article class="flex-column">
 				<div class="project-header-container">
 					<h3>n4-simple-build <span class="accent-color">@ My Own</span></h3>
 					<a href="https://github.com/SheepCreativeSoftware/n4-simple-build" target="_blank">Code <span class="accent-color">@ GitHub</span></a>
@@ -157,7 +157,7 @@
 				</div>
 			</article>
 
-			<article>
+			<article class="flex-column">
 				<div class="project-header-container">
 					<h3>Change Version Toolkit <span class="accent-color">@ SBC Deutschland GmbH</span></h3>
 				</div>
@@ -181,7 +181,7 @@
 				</div>
 			</article>
 
-			<article>
+			<article class="flex-column">
 				<div class="project-header-container">
 					<h3>Enhanced Web Viewer <span class="accent-color">@ SBC Deutschland GmbH</span></h3>
 				</div>
@@ -205,7 +205,7 @@
 				</div>
 			</article>
 
-			<article>
+			<article class="flex-column">
 				<div class="project-header-container">
 					<h3>Advanced Menu <span class="accent-color">@ SBC Deutschland GmbH</span></h3>
 				</div>
@@ -231,12 +231,12 @@
 			</article>
 		</section>
 
-		<section id="contact">
+		<section id="contact" class="flex-column">
 			<div class="article-heading">
 				<h2>Get In Touch</h2>
 				<hr>
 			</div>
-			<article>
+			<article class="flex-column flex-space-center">
 				<p>
 					Although I'm <span class="accent-color">currently looking for new opportunities</span>, my inbox is always open.
 					Whether you have a question or just want to say hi, I'll try my best to get back to you!
@@ -248,7 +248,7 @@
 	</main>
 	
 	<footer>
-		<nav>
+		<nav class="flex-space-center">
 			<span id="copyright">Marina Egner &copy; 2023</span>
 			<ul>
 				<li><a href="imprint.html">Imprint</a></li>
