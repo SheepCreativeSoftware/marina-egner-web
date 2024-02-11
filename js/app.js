@@ -1,6 +1,5 @@
 const timeBefore = 300;
-const timeForHeadlineCharacter = 50;
-const timeForQuoteCharacter = 50;
+const timeForNextCharacter = 50;
 const timeBetween = 200;
 
 const wait = (time) => {
@@ -31,6 +30,8 @@ const reveal = () => {
 }
 
 const zero = 0;
+const next = 1;
+
 document.addEventListener('DOMContentLoaded', async () => {
 	const copyright = document.getElementById('copyright')
 	copyright.innerText = copyright.innerText.replace('2023', '2023-'+new Date().getFullYear());
@@ -43,24 +44,23 @@ document.addEventListener('DOMContentLoaded', async () => {
 	});
 
 	if(document.getElementsByClassName('not-start').length === zero) {
-		const headlineMainHiSpan = document.getElementById('headline-dynamic-accent');
-		const headlineMainSpan = document.getElementById('headline-dynamic-normal');
-		const headlineQuoteSpan = document.getElementById('headline-quote-dynamic');
+
+		const headlineMainSpan = document.getElementsByClassName('headline-dynamic');
 		const headlineBlinkSpan = document.getElementsByClassName('headline-blink');
-		const headlineHiText = headlineMainHiSpan.dataset.text;
-		const headlineText = headlineMainSpan.dataset.text;
-		const quoteText = headlineQuoteSpan.dataset.text;
 
 		await wait(timeBefore);
-		await typeText(headlineHiText, headlineMainHiSpan, timeForHeadlineCharacter);
-		await wait(timeBetween);
-		headlineBlinkSpan[0].classList.add('hidden');
-		headlineBlinkSpan[1].classList.remove('hidden');
-		await typeText(headlineText, headlineMainSpan, timeForHeadlineCharacter);
-		await wait(timeBetween);
-		headlineBlinkSpan[1].classList.add('hidden');
-		headlineBlinkSpan[2].classList.remove('hidden');
-		await typeText(quoteText, headlineQuoteSpan, timeForQuoteCharacter);
+		for (let index = 0; index < headlineMainSpan.length; index++) {
+			const element = headlineMainSpan[index];
+			const text = element.dataset.text;
+
+			await typeText(text, element, timeForNextCharacter);
+			await wait(timeBetween);
+
+			if(index + next < headlineMainSpan.length) {
+				headlineBlinkSpan[index].classList.add('hidden');
+				headlineBlinkSpan[index + next].classList.remove('hidden');
+			}
+		}
 	}
 });
 

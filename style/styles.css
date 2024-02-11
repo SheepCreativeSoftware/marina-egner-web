@@ -1,14 +1,11 @@
 
 :root {
 	--font-sans: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-	--font-serif: Georgia,Times,serif;
 
 	--color-background: #1E1E1E;
 	--color-beyond-dark: #FFFFFF;
-	--color-beyond-light: #15171A;
 	--accent-color: #FF1A75;
 	--footer-background: #0A0B0C;
-	--preview-text: #FFFFFFBF;
 	--article-text: #FFFFFFBF;
 	--boarder-decent-color: #474747BB;
 
@@ -26,7 +23,7 @@ html, body {
 	font-weight: normal;
 	margin: 0;
 	background-color: var(--color-background);
-	color: #fff;
+	color: var(--color-beyond-dark);
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
@@ -131,6 +128,21 @@ li::before {
     top: -100px;
     visibility: hidden;
 }
+.flex-row {
+	display: flex;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-space-center {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 
 /************************************************
  * Header definition
@@ -140,8 +152,6 @@ li::before {
 	width: calc(100% - var(--min-side-padding) - var(--min-side-padding));
 	height: 100vh;
 	padding: 0 var(--min-side-padding);
-	display: flex;
-	flex-direction: column;
 	justify-content: flex-start;
 }
 
@@ -157,9 +167,6 @@ header {
 	height: 110px;
 	width: calc(100% - var(--min-side-padding) - var(--min-side-padding));
 	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	transition: background-color 1s;
 	transition: height 1s;
 	z-index: 1;
@@ -204,16 +211,11 @@ header.not-start {
 
 header nav {
 	font-weight: 500;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	gap: 25px
 }
 
 .headline {
 	flex: 1;
-	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
 	margin: auto;
@@ -236,11 +238,11 @@ header nav {
 
 .headline-quote {
 	font-size: 32px;
-	color: var(--preview-text);
+	color: var(--article-text);
 }
 
 .headline-quote>.headline-blink {
-	background-color: var(--preview-text);
+	background-color: var(--article-text);
 }
 
 
@@ -272,10 +274,9 @@ header nav {
  ************************************************/
 
 main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	padding: 0 var(--min-side-padding);
+	max-width: 1200px;
+	margin: auto;
 }
 
 main.not-start {
@@ -283,15 +284,11 @@ main.not-start {
 }
 
 section {
-	display: flex;
-	flex-direction: column;
 	padding: 100px 75px;
 	gap: 50px;
 }
 
 article {
-	display: flex;
-	flex-direction: column;
 	gap: 25px
 }
 
@@ -421,9 +418,6 @@ footer {
 
 footer nav {
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
 footer nav ul {
@@ -503,17 +497,6 @@ footer .logo {
 	background-color: #555;
 }
 
-
-/************************************************
- * Responsive on large screens
- ************************************************/
-
-@media (min-width: 1600px) {
-	main {
-		max-width: 1200px;
-		margin: auto;
-	}
-}
 
 /************************************************
  * Responsive on tablets
@@ -617,6 +600,7 @@ footer .logo {
 	}
 	.logo-text {
 		font-size: 32px;
+		margin-bottom: 8px;
 	}
 }
 
