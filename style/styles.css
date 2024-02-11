@@ -125,6 +125,12 @@ li::before {
 	opacity: 1;
 }
 
+.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
 
 /************************************************
  * Header definition

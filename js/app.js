@@ -24,10 +24,9 @@ const reveal = () => {
 	for (var index = 0; index < reveals.length; index++) {
 		const windowHeight = window.innerHeight;
 		const elementTop = reveals[index].getBoundingClientRect().top;
-		const elementVisible = 150;
+		const elementVisible = 50;
 
 		if (elementTop < windowHeight - elementVisible) reveals[index].classList.add("active");
-		else reveals[index].classList.remove("active");
 	}
 }
 
