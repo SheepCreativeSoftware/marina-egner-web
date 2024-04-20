@@ -150,13 +150,15 @@
 					<div class="projects-content-container">
 						<span><a href="https://www.google.com/search?q=TypeScript" target="_blank">TypeScript</a> - <a href="https://www.google.com/search?q=node.js" target="_blank">Node.js</a> - <a href="https://www.google.com/search?q=express.js" target="_blank">Express.js</a> - <a href="https://www.google.com/search?q=API" target="_blank">API</a> - <a href="https://www.google.com/search?q=JEST+testing" target="_blank">JEST</a> - <a href="https://www.google.com/search?q=SQL" target="_blank">SQL</a></span>
 						<p>
-							Simple API to generate and manage a simple survey which will later be used by a angular frontend app (Still work in progess).
-							This project is mainly focused on enhancing knowledge and learnig new things, while working with them.
+							Simple API to generate and manage a survey which will later be used by a react frontend app (Still work in progess).
 							The API uses a MariaDB SQL database to store the data of the survey.
-							It is not ment to be too complex in the first implementation.
-							A user can create a survey, which provides him a creation-token. 
-							The creation-token is used to manage a survey and is like some kind of authorization (No extra user identification for now).
-							Later on a public-token can be used to open a existing survey and answer it.
+							The API follows the CQRS Pattern. A User is able to register an account at the server. 
+							With this account the user can authenticate which will provide him a JWT which can be used to authorize via Bearer Token on creational routes.
+							The user can than view and manage surveys.<br>
+							<br>
+							After editing of a survey is completed the user can complete the survey, which opens the survey for answering (It can no longer be edited).
+							The user can create answerer tokens, to share with people that should answer the survey.
+							Each answerer token can only be used ones for answering.
 						</p>
 					</div>
 				</div>
