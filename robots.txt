@@ -1,0 +1,2 @@
+# robots.txt file of https://marina-egner.sheepcs.de/
+sitemap: https://marina-egner.sheepcs.de/sitemap.xml
