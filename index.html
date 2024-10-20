@@ -1,307 +1,776 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Website of Marina Egner">
-	<meta name="keywords" content="Marina Egner, Portfolio, CV">
-	<meta name="author" content="Marina Egner">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Website of Marina Egner" />
+		<meta name="keywords" content="Marina Egner, Portfolio, CV" />
+		<meta name="author" content="Marina Egner" />
 
-	<title>Marina Egner</title>
-	<link href="style/styles.css" rel="stylesheet">
-	<link rel="icon" href="images/SheepLogoV4GrauTransparent.png" type="image/png">
-	<link rel="icon" href="images/SheepLogoV4GrauTransparent.svg" type="image/png">
-	<script type="module" src="js/app.js"></script>
-</head>
-<body>
-	<div class="header-container flex-column">
-		<header id="nav-bar" class="flex-space-center">
-			<div class="logo-container">
-				<a class="logo-link" href="https://marina-egner.sheepcs.de">
-					<h2 class="logo-text"><span class="logo-brace">&lbrace;</span> M: Egner <span class="logo-brace">&rbrace;</span></h2>
-				</a>
+		<title>Marina Egner</title>
+		<link href="style/styles.css" rel="stylesheet" />
+		<link
+			rel="icon"
+			href="images/SheepLogoV4GrauTransparent.png"
+			type="image/png"
+		/>
+		<link
+			rel="icon"
+			href="images/SheepLogoV4GrauTransparent.svg"
+			type="image/png"
+		/>
+		<script type="module" src="js/app.js"></script>
+	</head>
+	<body>
+		<div class="header-container flex-column">
+			<header id="nav-bar" class="flex-space-center">
+				<div class="logo-container">
+					<a class="logo-link" href="https://marina-egner.sheepcs.de">
+						<h2 class="logo-text">
+							<span class="logo-brace">&lbrace;</span> M: Egner
+							<span class="logo-brace">&rbrace;</span>
+						</h2>
+					</a>
+				</div>
+				<nav id="main-nav" class="flex-space-center">
+					<a class="nav-link" href="#about">About</a>
+					<a class="nav-link" href="#experience">Experience</a>
+					<a class="nav-link" href="#projects">Projects</a>
+					<a class="default-btn accent-btn" href="#contact">Contact</a>
+				</nav>
+			</header>
+			<div class="headline flex-column">
+				<h1 class="headline-title">
+					<span
+						id="headline-dynamic-accent"
+						class="headline-dynamic"
+						data-text="Hi, my name is"
+					></span
+					><span class="headline-blink">&nbsp;</span><br />
+					<span class="headline-dynamic" data-text="Marina Egner."></span
+					><span class="headline-blink hidden">&nbsp;</span>
+				</h1>
+				<span class="headline-quote"
+					><span
+						class="headline-dynamic"
+						data-text="I love to build things on the web."
+					></span
+					><span class="headline-blink hidden">&nbsp;</span></span
+				>
 			</div>
-			<nav id="main-nav" class="flex-space-center">
-				<a class="nav-link" href="#about">About</a>
-				<a class="nav-link" href="#experience">Experience</a>
-				<a class="nav-link" href="#projects">Projects</a>
-				<a class="default-btn accent-btn" href="#contact">Contact</a>
+		</div>
+
+		<main class="flex-column flex-space-center">
+			<a class="anchor" id="about"></a>
+			<section class="reveal flex-column">
+				<div class="article-heading">
+					<h2>About me</h2>
+					<hr />
+				</div>
+				<article class="flex-column">
+					<p>
+						Programming and problem solving has always somehow accompanied my
+						life, both privately and professionally. Probably around of 2008, I
+						started to create my first batch scripts and I gained my first
+						experience in the web by exploring the code of web pages. Beginning
+						in 2010 I started to become a electrician in building automation
+						where I could build up a great knowledge in programming PLC's and
+						micro-controllers. In 2013 I decided to try my hand at creating
+						<a href="https://old.mch-huelben.de" target="_blank"
+							>my first website for a club</a
+						>
+						and slowly I tumbled head first into the rabbit hole of coding and
+						development. However back then my love for web development had not
+						fully developed.
+					</p>
+					<p>
+						Fast-forward to 2019, on my
+						<a href="#experience">job in tech support</a>, I had the opportunity
+						to again focus on web based technologies, while creating software
+						components and extension for some products of our company. And it
+						should not take long until I was fully in love with it. So, I
+						started to dig in deeper and gain experience by creating some little
+						front-end, back-end and web based desktop applications.
+					</p>
+					<p>
+						In 2024 I had to search for new opportunities, because my company
+						had to close down the location where I worked. So I decided to take
+						the chance and start with a new chapter in my life in the field of
+						web development. As this seems to be the right way, based on my
+						experience and my passion for it and also in terms of personal
+						development.
+					</p>
+					<p>Here are a few technologies I've been working with recently:</p>
+					<div class="tech-stack-container">
+						<ul>
+							<li>
+								<a
+									href="https://www.google.com/search?q=JavaScript"
+									target="_blank"
+									>JavaScript (ES6+)</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.google.com/search?q=TypeScript"
+									target="_blank"
+									>TypeScript</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.google.com/search?q=node.js"
+									target="_blank"
+									>Node.js</a
+								>
+							</li>
+							<li>
+								<a href="https://www.google.com/search?q=express.js"
+									>Express.js</a
+								>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="https://www.google.com/search?q=vuejs" target="_blank"
+									>Vue</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.google.com/search?q=Pinia+vuejs"
+									target="_blank"
+									>Vuex/Pinia</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.google.com/search?q=Electron.js"
+									target="_blank"
+									>Electron.js</a
+								>
+							</li>
+							<li>
+								<a href="https://www.google.com/search?q=SQL" target="_blank"
+									>SQL</a
+								>
+							</li>
+						</ul>
+					</div>
+				</article>
+			</section>
+
+			<a class="anchor" id="experience"></a>
+			<section class="flex-column reveal">
+				<div class="article-heading">
+					<h2>Where I've Worked</h2>
+					<hr />
+				</div>
+				<article class="flex-column reveal">
+					<h3>
+						Backend Software Developer
+						<a href="https://www.pickware.com/" target="_blank"
+							>@ Pickware GmbH</a
+						>
+					</h3>
+					<div class="experience-container">
+						<span class="experience-date">May 2024 - Today</span>
+						<ul class="experience-text">
+							<li>
+								I've developed software on existing plugins for the shopware 6
+								platform.
+							</li>
+							<li>
+								I've made changes on the frontend side using Vue/Vuex and the
+								backend side using PHP, Symfony and MySQL
+							</li>
+							<li>
+								I've made improvements on the CI/CD pipeline and the development
+								process for releases of plugins.
+							</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="flex-column reveal">
+					<h3>
+						Experienced Tech Support Professional
+						<a href="https://www.saia-pcd.com/" target="_blank"
+							>@ SBC Deutschland GmbH</a
+						>
+					</h3>
+					<div class="experience-container">
+						<span class="experience-date">Juli 2020 - April 2024</span>
+						<ul class="experience-text">
+							<li>
+								I've analyzed complex hardware and software problems, developed
+								approaches to solutions and, if necessary, involved the
+								development or product management.
+							</li>
+							<li>
+								I've supported the development department in the escalation
+								process on troubleshooting and feature requests.
+							</li>
+							<li>
+								I've designed and developed additional customer-specific
+								software solutions and extensions to existing products.
+							</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="flex-column reveal">
+					<h3>
+						Technical Support Specialist
+						<a href="https://www.saia-pcd.com/" target="_blank"
+							>@ SBC Deutschland GmbH</a
+						>
+					</h3>
+					<div class="experience-container">
+						<span class="experience-date">Juli 2019 - June 2020</span>
+						<ul class="experience-text">
+							<li>
+								I've analyzed hardware and software problems, developed
+								approaches to solutions and, if necessary, involved colleagues.
+							</li>
+							<li>
+								I am autodidactically familiarizing myself with new subject
+								areas in order to be able to better analyze, evaluate and solve
+								problems.
+							</li>
+							<li>
+								I've hold training courses to familiarize customers with
+								software tools.
+							</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="flex-column reveal">
+					<h3>
+						Electrician / PLC-Programmer
+						<a href="https://schaefer-anlagentechnik.de/" target="_blank"
+							>@ Schäfer Anlagentechnik GmbH</a
+						>
+					</h3>
+					<div class="experience-container">
+						<span class="experience-date">February 2014 - June 2019</span>
+						<ul class="experience-text">
+							<li>
+								I've manage complete projects and accompany them from the
+								planning phase to the finished system.
+							</li>
+							<li>
+								I've created project-specific software for the control,
+								regulation and visualization of systems.
+							</li>
+							<li>
+								I had to look after existing systems with maintenance, expansion
+								or in error analysis.
+							</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="flex-column reveal">
+					<h3>
+						Education as electrician for automation
+						<a href="https://schaefer-anlagentechnik.de/" target="_blank"
+							>@ Schäfer Anlagentechnik GmbH</a
+						>
+					</h3>
+					<div class="experience-container">
+						<span class="experience-date">August 2010 - February 2014</span>
+						<ul class="experience-text">
+							<li>I learned the basic knowledge of electrical engineering.</li>
+							<li>
+								I learned the basic knowledge in programming PLC-Controllers.
+							</li>
+						</ul>
+					</div>
+				</article>
+			</section>
+
+			<a class="anchor" id="projects"></a>
+			<section class="flex-column reveal">
+				<div class="article-heading">
+					<h2>Some Things I've Built</h2>
+					<hr />
+				</div>
+
+				<article class="flex-column reveal">
+					<div class="project-header-container">
+						<h3>
+							Redesign of the Website from MCH
+							<span class="accent-color">@ My Own</span>
+						</h3>
+						<a
+							href="https://github.com/SheepCreativeSoftware/mch-huelben-website"
+							target="_blank"
+							>Code <span class="accent-color">@ GitHub</span></a
+						>
+					</div>
+					<div class="project-body-container">
+						<div class="projects-content-container">
+							<span class="projects-date">November 2023 - Today</span>
+							<img src="images/mch-website.jpeg" alt="mch website preview" />
+						</div>
+						<div class="projects-content-container">
+							<span
+								><a
+									href="https://www.google.com/search?q=TypeScript"
+									target="_blank"
+									>TypeScript</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=node.js"
+									target="_blank"
+									>Node.js</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=express.js"
+									target="_blank"
+									>Express.js</a
+								>
+								-
+								<a href="https://www.google.com/search?q=API" target="_blank"
+									>API</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=Vue+Pinia"
+									target="_blank"
+									>Vue/Pinia</a
+								>
+								-
+								<a href="https://www.google.com/search?q=SQL" target="_blank"
+									>SQL</a
+								></span
+							>
+							<p>
+								This project is focused on a complete redesign of the website
+								from
+								<a href="https://mch-huelben.de" target="_blank"
+									>mch-huelben.de</a
+								>, which I made with PHP back in 2013. The site was no longer
+								state of the art and the idea was to level up this project using
+								lot of skills I gain over time and also exploring new ones.<br />
+								<br />
+								This project runs on a
+								<a href="https://www.google.com/search?q=nodejs+expressjs"
+									>node/express HTTP server</a
+								>
+								with a
+								<a href="https://www.google.com/search?q=mariadb"
+									>MariaDB Database</a
+								>
+								using
+								<a href="https://www.google.com/search?q=typeorm">typeorm</a>.
+								Site rendering is done using
+								<a href="https://www.google.com/search?q=vuejs">Vue 3</a> and
+								<a href="https://www.google.com/search?q=pinia+vuejs">Pinia</a>.
+								The project is fully able to render on server side and is able
+								to hydrate the rendering state and render additional
+								pages/content directly on client side. This overall improves the
+								performance by a lot, makes it light weight and can also be
+								easily used for administration purposes.<br />
+								<br />
+								So I created accidentally a little SSR/CSR SPA framework.
+							</p>
+						</div>
+					</div>
+				</article>
+
+				<article class="flex-column reveal">
+					<div class="project-header-container">
+						<h3>readlines-iconv <span class="accent-color">@ My Own</span></h3>
+						<a
+							href="https://github.com/SheepCreativeSoftware/readlines-iconv"
+							target="_blank"
+							>Code <span class="accent-color">@ GitHub</span></a
+						>
+					</div>
+					<div class="project-body-container">
+						<div class="projects-content-container">
+							<span class="projects-date">December 2023 - January 2024</span>
+							<img src="images/readlines-iconv.jpeg" alt="readlines-iconv" />
+						</div>
+						<div class="projects-content-container">
+							<span
+								><a
+									href="https://www.google.com/search?q=JavaScript"
+									target="_blank"
+									>JavaScript</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=TypeScript"
+									target="_blank"
+									>TypeScript</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=node.js"
+									target="_blank"
+									>Node.js</a
+								>
+								-
+								<a href="https://www.google.com/search?q=NPM" target="_blank"
+									>NPM</a
+								></span
+							>
+							<p>
+								I had to read in multiple files with various encodings, fast and
+								easily - So I came up with my own solution.<br />
+								<br />
+								A small little npm module that is able to read files line by
+								line synchronously or asynchronously. It includes per default a
+								evaluation of the end of line character of the file (CRLF, LF,
+								CR) and supports a lot of possible encodings thankfully to the
+								integrated iconv-lite module. It makes use of the JavaScript
+								Iterator Protocol to conveniently deliver line by line.
+							</p>
+						</div>
+					</div>
+				</article>
+
+				<article class="flex-column reveal">
+					<div class="project-header-container">
+						<h3>n4-simple-build <span class="accent-color">@ My Own</span></h3>
+						<a
+							href="https://github.com/SheepCreativeSoftware/n4-simple-build"
+							target="_blank"
+							>Code <span class="accent-color">@ GitHub</span></a
+						>
+					</div>
+					<div class="project-body-container">
+						<div class="projects-content-container">
+							<span class="projects-date">May 2023 - January 2024</span>
+							<img src="images/n4-simple-build.png" alt="n4-simple-build" />
+						</div>
+						<div class="projects-content-container">
+							<span
+								><a
+									href="https://www.google.com/search?q=JavaScript"
+									target="_blank"
+									>JavaScript</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=TypeScript"
+									target="_blank"
+									>TypeScript</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=node.js"
+									target="_blank"
+									>Node.js</a
+								>
+								-
+								<a href="https://www.google.com/search?q=NPM" target="_blank"
+									>NPM</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=Niagara%20Supervisor"
+									target="_blank"
+									>Niagara Supervisor</a
+								></span
+							>
+							<p>
+								Node.JS/NPM-module to build simple N4 Framework modules via CLI.
+								The goal was that it is simple to use without the need for an
+								IDE or lots of deeper experience with Java or N4. For simple
+								resource modules which do not need java files or which not
+								require a java compiler.<br />
+								<br />
+								It is also able to extract original (english) lexicon files
+								(language specific text files) from N4 java modules and can
+								create CSV-files for translation into different languages. It
+								can re-import translated CSV-files for building simple Lexicon
+								modules for N4.
+							</p>
+						</div>
+					</div>
+				</article>
+
+				<article class="flex-column reveal">
+					<div class="project-header-container">
+						<h3>
+							Change Version Toolkit
+							<span class="accent-color">@ SBC Deutschland GmbH</span>
+						</h3>
+					</div>
+					<div class="project-body-container">
+						<div class="projects-content-container">
+							<span class="projects-date">January 2023 - February 2024</span>
+							<img
+								src="images/change-version-toolkit.jpg"
+								alt="n4-simple-build"
+							/>
+						</div>
+						<div class="projects-content-container">
+							<span
+								><a
+									href="https://www.google.com/search?q=JavaScript"
+									target="_blank"
+									>JavaScript</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=TypeScript"
+									target="_blank"
+									>TypeScript</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=electron.js"
+									target="_blank"
+									>Electron.js</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=node.js"
+									target="_blank"
+									>Node.js</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=Niagara%20Supervisor"
+									target="_blank"
+									>Niagara Supervisor</a
+								></span
+							>
+							<p>
+								A small and simple Electron.js based desktop application
+								designed to switch and manage different versions of N4. In
+								engineering with N4 it is often necessary to switch between
+								different versions and to access different tools, folders and
+								settings of N4. This application is designed to easily support
+								the handling of N4 in different versions.<br />
+								<br />
+								It can install/uninstall, detect, monitor and manage the state
+								of the Windows based service daemon for different versions and
+								installations. It features hotkeys for the most commonly used
+								features and directories. It also features an supportive and
+								easy way to adjust the heap of the Java runtime of N4 which is
+								always specifically necessary depending on the project and
+								available resources.
+							</p>
+						</div>
+					</div>
+				</article>
+
+				<article class="flex-column reveal">
+					<div class="project-header-container">
+						<h3>
+							Enhanced Web Viewer
+							<span class="accent-color">@ SBC Deutschland GmbH</span>
+						</h3>
+					</div>
+					<div class="project-body-container">
+						<div class="projects-content-container">
+							<span class="projects-date">December 2022 - February 2024</span>
+							<img src="images/enhanced-web-viewer.png" alt="n4-simple-build" />
+						</div>
+						<div class="projects-content-container">
+							<span
+								><a
+									href="https://www.google.com/search?q=JavaScript"
+									target="_blank"
+									>JavaScript</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=TypeScript"
+									target="_blank"
+									>TypeScript</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=electron.js"
+									target="_blank"
+									>Electron.js</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=node.js"
+									target="_blank"
+									>Node.js</a
+								>
+								-
+								<a href="https://www.google.com/search?q=HTTP" target="_blank"
+									>HTTP</a
+								></span
+							>
+							<p>
+								Electron.js based desktop application for Windows and Linux. It
+								is designed to act like a browser with additional functionality.
+								It is manly designed to manage and visualize the web-based
+								application of SBC's PLC-Controllers. There are limited
+								possibilities on older PLC-Platform which required a client side
+								app which could handle some functionality over different
+								origins. <br />
+								It can interact with that application to store specific
+								persistent data between sessions and to share such data between
+								different PLC-Controllers, to enhance the overall functionality.
+								It has a additional alarming functionality (visual and
+								acoustic), to inform the user in case something is wrong on the
+								plant. It is capable for caching sessions which heavily reduces
+								loading times over slow Ethernet connections.
+							</p>
+						</div>
+					</div>
+				</article>
+
+				<article class="flex-column reveal">
+					<div class="project-header-container">
+						<h3>
+							Advanced Menu
+							<span class="accent-color">@ SBC Deutschland GmbH</span>
+						</h3>
+					</div>
+					<div class="project-body-container">
+						<div class="projects-content-container">
+							<span class="projects-date">December 2019 - March 2024</span>
+							<img src="images/advanced-menu.png" alt="n4-simple-build" />
+						</div>
+						<div class="projects-content-container">
+							<span
+								><a
+									href="https://www.google.com/search?q=JavaScript"
+									target="_blank"
+									>JavaScript</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=TypeScript"
+									target="_blank"
+									>TypeScript</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=Niagara%20Supervisor"
+									target="_blank"
+									>Niagara Supervisor</a
+								>
+								-
+								<a
+									href="https://www.google.com/search?q=Handlebars"
+									target="_blank"
+									>Handlebars</a
+								>
+								-
+								<a href="https://www.google.com/search?q=JSON" target="_blank"
+									>JSON</a
+								></span
+							>
+							<p>
+								Is a fully customizable and dynamic frontend dashboard with an
+								integrated customizable menu. <br />
+								<br />
+								It is possible to open up any possible view from within N4
+								inside of the main frame of the Advanced Menu. The Advanced Menu
+								can connect to different data APIs from N4 to show up alarm
+								information, specific boolean or numeric data information and
+								weather information (e.g. using 3rd party APIs). The Advanced
+								Menu features a configurator tool to easily configurate the full
+								functionality using JSON. <br />
+								<br />
+								Parts of the configuration and the language of the Advanced Menu
+								can be differently configured for each user. The Advanced Menu
+								also has a fully configurable theme for different brandings in
+								dark and light mode.
+							</p>
+						</div>
+					</div>
+				</article>
+			</section>
+
+			<a class="anchor" id="contact"></a>
+			<section class="flex-column reveal">
+				<div class="article-heading">
+					<h2>Get In Touch</h2>
+					<hr />
+				</div>
+				<article class="flex-column flex-space-center">
+					<p class="text-center">
+						Although I'm
+						<span class="accent-color"
+							>currently looking for new opportunities</span
+						>, my inbox is always open. Whether you have a question or just want
+						to say hi, I'll try my best to get back to you!
+					</p>
+					<a
+						class="default-btn accent-btn"
+						href="mailto:marinafcegner@sheepcs.de"
+						target="_blank"
+						>Say Hello</a
+					>
+				</article>
+			</section>
+		</main>
+
+		<footer>
+			<nav class="flex-space-center">
+				<span id="copyright">Marina Egner &copy; 2023</span>
+				<ul>
+					<li><a href="imprint.html">Imprint</a></li>
+					<li>
+						<a href="mailto:marinafcegner@sheepcs.de" target="_blank"
+							>Contact</a
+						>
+					</li>
+				</ul>
+				<span id="created-by">
+					Created by M.Egner<br />
+					Inspired by
+					<a href="https://v4.brittanychiang.com/" target="_blank"
+						>Brittany Chiang</a
+					>
+				</span>
 			</nav>
-		</header>
-		<div class="headline flex-column">
-			<h1 class="headline-title">
-				<span id="headline-dynamic-accent" class="headline-dynamic" data-text="Hi, my name is"></span><span class="headline-blink ">&nbsp;</span><br>
-				<span class="headline-dynamic" data-text="Marina Egner."></span><span class="headline-blink hidden">&nbsp;</span>
-			</h1>
-			<span class="headline-quote"><span class="headline-dynamic" data-text="I love to build things on the web."></span><span class="headline-blink hidden">&nbsp;</span></span>
-		</div>
-	</div>
-
-	<main class="flex-column flex-space-center">
-		<a class="anchor" id="about" ></a>
-		<section class="reveal flex-column">
-			<div class="article-heading">
-				<h2 >About me</h2>
-				<hr>
+			<div class="logo-conatiner">
+				<a
+					class="logo-link"
+					href="https://marina-egner.sheepcs.de"
+					target="_blank"
+				>
+					<h2 class="logo-text">
+						<span class="logo-brace">&lbrace;</span> M: Egner
+						<span class="logo-brace">&rbrace;</span>
+					</h2>
+				</a>
+				<div class="social-container">
+					<a href="https://github.com/magraina" target="_blank"
+						><img class="social-logo" src="images/github.svg" alt="GitHub Logo"
+					/></a>
+					<a href="https://www.instagram.com/magraina/" target="_blank"
+						><img
+							class="social-logo"
+							src="images/Instagram.svg"
+							alt="Instagram Logo"
+					/></a>
+					<a
+						href="https://www.linkedin.com/in/marina-egner-93193818a"
+						target="_blank"
+						><img
+							class="social-logo"
+							src="images/LinkedIn.png"
+							alt="LinkedIn Logo"
+					/></a>
+					<a href="https://www.facebook.com/marina.egner.9/" target="_blank"
+						><img
+							class="social-logo"
+							src="images/Facebook.png"
+							alt="Facebook Logo"
+					/></a>
+				</div>
 			</div>
-			<article class="flex-column">
-				<p>
-					Programming and problem solving has always somehow accompanied my life, both privately and professionally.
-					Probably around of 2008, I started to create my first batch scripts and I gained my first experience in the web by exploring the code of web pages.
-					Beginning in 2010 I started to become a electrician in building automation where I could build up a great knowledge in programming PLC's and micro-controllers.
-					In 2013 I decided to try my hand at creating <a href="https://mch-huelben.de" target="_blank">my first website</a> and slowly I tumbled head first into the rabbit hole of coding and development.
-					However back then my love for web development has not yet fully developed.
-				</p>
-				<p>
-					Fast-forward to 2019, on my <a href="#experience">current job in tech support</a>, I had the opportunity to again focus on web based technologies, while creating software components and extension for some products of our company.
-					And it should not take long until I was fully in love with it. 
-					So, I started to dig in deeper and gain experience by creating front-end, back-end and web based desktop applications.
-				</p>
-				<p>
-					Here are a few technologies I've been working with recently:
-				</p>
-				<div class="tech-stack-container">
-					<ul>
-						<li><a href="https://www.google.com/search?q=JavaScript" target="_blank">JavaScript (ES6+)</a></li>
-						<li><a href="https://www.google.com/search?q=node.js" target="_blank">Node.js</a></li>
-						<li><a href="https://www.google.com/search?q=express.js">Express.js</a></li>
-					</ul>
-					<ul>
-						<li><a href="https://www.google.com/search?q=TypeScript" target="_blank">TypeScript</a></li>
-						<li><a href="https://www.google.com/search?q=Electron.js" target="_blank">Electron.js</a></li>
-						<li><a href="https://www.google.com/search?q=SQL" target="_blank">SQL</a></li>
-					</ul>
-				</div>
-			</article>
-		</section>
-
-		<a class="anchor" id="experience"></a>
-		<section class="flex-column reveal">
-			<div class="article-heading">
-				<h2>Where I've Worked</h2>
-				<hr>
-			</div>
-			<article class="flex-column reveal">
-				<h3>Experienced Tech Support Professional <a href="https://www.saia-pcd.com/" target="_blank">@ SBC Deutschland GmbH</a></h3>
-				<div class="experience-container">
-					<span class="experience-date">Juli 2020 - Today</span>
-					<ul class="experience-text">
-						<li>I analyze complex hardware and software problems, develop approaches to solutions and, if necessary, involve development or product management.</li>
-						<li>I support the development department in the escalation process on troubleshooting and feature requests.</li>
-						<li>I design and develop additional customer-specific software solutions and extensions to existing products.</li>
-					</ul>
-				</div>
-			</article>
-
-			<article class="flex-column reveal">
-				<h3>Technical Support Specialist <a href="https://www.saia-pcd.com/" target="_blank">@ SBC Deutschland GmbH</a></h3>
-				<div class="experience-container">
-					<span class="experience-date">Juli 2019 - June 2020</span>
-					<ul class="experience-text">
-						<li>I analyze hardware and software problems, develop approaches to solutions and, if necessary, involve colleagues.</li>
-						<li>I am autodidactically familiarizing myself with new subject areas in order to be able to better analyze, evaluate and solve problems.</li>
-						<li>I hold training courses to familiarize customers with software tools.</li>
-					</ul>
-				</div>
-			</article>
-
-			<article class="flex-column reveal">
-				<h3>Electrician / PLC-Programmer <a href="https://schaefer-anlagentechnik.de/" target="_blank">@ Schäfer Anlagentechnik GmbH</a></h3>
-				<div class="experience-container">
-					<span class="experience-date">February 2014 - June 2019</span>
-					<ul class="experience-text">
-						<li>I manage complete projects and accompany them from the planning phase to the finished system.</li>
-						<li>I create project-specific software for the control, regulation and visualization of systems.</li>
-						<li>I look after existing systems with maintenance, expansion or error analysis.</li>
-					</ul>
-				</div>
-			</article>
-
-			<article class="flex-column reveal">
-				<h3>Education as electrician for automation <a href="https://schaefer-anlagentechnik.de/" target="_blank">@ Schäfer Anlagentechnik GmbH</a></h3>
-				<div class="experience-container">
-					<span class="experience-date">August 2010 - February 2014</span>
-					<ul class="experience-text">
-						<li>I learned the basic knowledge of electrical engineering.</li>
-						<li>I learned the basic knowledge in programming PLC-Controllers.</li>
-					</ul>
-				</div>
-			</article>
-		</section>
-
-		<a class="anchor" id="projects"></a>
-		<section class="flex-column reveal">
-			<div class="article-heading">
-				<h2>Some Things I've Built</h2>
-				<hr>
-			</div>
-
-			<article class="flex-column reveal">
-				<div class="project-header-container">
-					<h3>Simple Survey API <span class="accent-color">@ My Own</span></h3>
-					<a href="https://github.com/SheepCreativeSoftware/survey-api" target="_blank">Code <span class="accent-color">@ GitHub</span></a>
-				</div>
-				<div class="project-body-container">
-					<div class="projects-content-container">
-						<span class="projects-date">February 2024 - Today</span>
-						<img src="images/simple-survey-api.jpg" alt="n4-simple-build">
-					</div>
-					<div class="projects-content-container">
-						<span><a href="https://www.google.com/search?q=TypeScript" target="_blank">TypeScript</a> - <a href="https://www.google.com/search?q=node.js" target="_blank">Node.js</a> - <a href="https://www.google.com/search?q=express.js" target="_blank">Express.js</a> - <a href="https://www.google.com/search?q=API" target="_blank">API</a> - <a href="https://www.google.com/search?q=JEST+testing" target="_blank">JEST</a> - <a href="https://www.google.com/search?q=SQL" target="_blank">SQL</a></span>
-						<p>
-							Simple API to generate and manage a survey which will later be used by a react frontend app (Still work in progess).
-							The API uses a MariaDB SQL database to store the data of the survey.
-							The API follows the CQRS Pattern. A User is able to register an account at the server. 
-							With this account the user can authenticate which will provide him a JWT which can be used to authorize via Bearer Token on creational routes.
-							The user can than view and manage surveys.<br>
-							<br>
-							After editing of a survey is completed the user can complete the survey, which opens the survey for answering (It can no longer be edited).
-							The user can create answerer tokens, to share with people that should answer the survey.
-							Each answerer token can only be used ones for answering.
-						</p>
-					</div>
-				</div>
-			</article>
-
-			<article class="flex-column reveal">
-				<div class="project-header-container">
-					<h3>n4-simple-build <span class="accent-color">@ My Own</span></h3>
-					<a href="https://github.com/SheepCreativeSoftware/n4-simple-build" target="_blank">Code <span class="accent-color">@ GitHub</span></a>
-				</div>
-				<div class="project-body-container">
-					<div class="projects-content-container">
-						<span class="projects-date">May 2023 - Today</span>
-						<img src="images/n4-simple-build.png" alt="n4-simple-build">
-					</div>
-					<div class="projects-content-container">
-						<span><a href="https://www.google.com/search?q=JavaScript" target="_blank">JavaScript</a> - <a href="https://www.google.com/search?q=TypeScript" target="_blank">TypeScript</a> - <a href="https://www.google.com/search?q=node.js" target="_blank">Node.js</a> - <a href="https://www.google.com/search?q=NPM" target="_blank">NPM</a> - <a href="https://www.google.com/search?q=Niagara%20Supervisor" target="_blank">Niagara Supervisor</a></span>
-						<p>
-							Node.JS/NPM-module to build simple N4 Framework modules via CLI.
-							The goal was that it is simple to use without the need for an IDE or lots of deeper experience with Java or N4.
-							For simple resource modules which do not need java files or which not require a java compiler.<br>
-							<br>
-							It is also able to extract original (english) lexicon files (language specific text files) from N4 java modules and can create CSV-files for translation into different languages.
-							It can re-import translated CSV-files for building simple Lexicon modules for N4.
-						</p>
-					</div>
-				</div>
-			</article>
-
-			<article class="flex-column reveal">
-				<div class="project-header-container">
-					<h3>Change Version Toolkit <span class="accent-color">@ SBC Deutschland GmbH</span></h3>
-				</div>
-				<div class="project-body-container">
-					<div class="projects-content-container">
-						<span class="projects-date">February 2023 - Today</span>
-						<img src="images/change-version-toolkit.jpg" alt="n4-simple-build">
-					</div>
-					<div class="projects-content-container">
-						<span><a href="https://www.google.com/search?q=JavaScript" target="_blank">JavaScript</a> - <a href="https://www.google.com/search?q=TypeScript" target="_blank">TypeScript</a> - <a href="https://www.google.com/search?q=electron.js" target="_blank">Electron.js</a> - <a href="https://www.google.com/search?q=node.js" target="_blank">Node.js</a> - <a href="https://www.google.com/search?q=Niagara%20Supervisor" target="_blank">Niagara Supervisor</a></span>
-						<p>
-							A small and simple Electron.js based desktop application designed to switch and manage different versions of N4.
-							In engineering with N4 it is often necessary to switch between different versions and to access different tools, folders and settings of N4.
-							This application is designed to easily support the handling of N4 in different versions.<br>
-							<br>
-							It can install/uninstall, detect, monitor and manage the state of the Windows based service daemon for different versions and installations.
-							It features hotkeys for the most commonly used features and directories.
-							It also features an supportive and easy way to adjust the heap of the Java runtime of N4 which is always specifically necessary depending on the project and available resources.
-						</p>
-					</div>
-				</div>
-			</article>
-
-			<article class="flex-column reveal">
-				<div class="project-header-container">
-					<h3>Enhanced Web Viewer <span class="accent-color">@ SBC Deutschland GmbH</span></h3>
-				</div>
-				<div class="project-body-container">
-					<div class="projects-content-container">
-						<span class="projects-date">December 2022 - Today</span>
-						<img src="images/enhanced-web-viewer.png" alt="n4-simple-build">
-					</div>
-					<div class="projects-content-container">
-						<span><a href="https://www.google.com/search?q=JavaScript" target="_blank">JavaScript</a> - <a href="https://www.google.com/search?q=TypeScript" target="_blank">TypeScript</a> - <a href="https://www.google.com/search?q=electron.js" target="_blank">Electron.js</a> - <a href="https://www.google.com/search?q=node.js" target="_blank">Node.js</a> - <a href="https://www.google.com/search?q=HTTP" target="_blank">HTTP</a></span>
-						<p>
-							Electron.js based desktop application for Windows and Linux. 
-							It is designed to act like a browser with additional functionality.
-							It is manly designed to manage and visualize the web-based application of SBC's PLC-Controllers.
-							There are limited possibilities on older PLC-Platform which required a client side app which could handle some functionality over different origins. <br>
-							It can interact with that application to store specific persistent data between sessions and to share such data between different PLC-Controllers, to enhance the overall functionality.
-							It has a additional alarming functionality (visual and acoustic), to inform the user in case something is wrong on the plant.
-							It is capable for caching sessions which heavily reduces loading times over slow Ethernet connections.
-						</p>
-					</div>
-				</div>
-			</article>
-
-			<article class="flex-column reveal">
-				<div class="project-header-container">
-					<h3>Advanced Menu <span class="accent-color">@ SBC Deutschland GmbH</span></h3>
-				</div>
-				<div class="project-body-container">
-					<div class="projects-content-container">
-						<span class="projects-date">December 2019 - Today</span>
-						<img src="images/advanced-menu.png" alt="n4-simple-build">
-					</div>
-					<div class="projects-content-container">
-						<span><a href="https://www.google.com/search?q=JavaScript" target="_blank">JavaScript</a> - <a href="https://www.google.com/search?q=TypeScript" target="_blank">TypeScript</a> - <a href="https://www.google.com/search?q=Niagara%20Supervisor" target="_blank">Niagara Supervisor</a> - <a href="https://www.google.com/search?q=Handlebars" target="_blank">Handlebars</a> - <a href="https://www.google.com/search?q=JSON" target="_blank">JSON</a></span>
-						<p>
-							Is a fully customizable and dynamic frontend dashboard with an integrated customizable menu. <br>
-							<br>
-							It is possible to open up any possible view from within N4 inside of the main frame of the Advanced Menu.
-							The Advanced Menu can connect to different data APIs from N4 to show up alarm information, specific boolean or numeric data information and weather information (e.g. using 3rd party APIs).
-							The Advanced Menu features a configurator tool to easily configurate the full functionality using JSON. <br>
-							<br>
-							Parts of the configuration and the language of the Advanced Menu can be differently configured for each user.
-							The Advanced Menu also has a fully configurable theme for different brandings in dark and light mode.
-						</p>
-					</div>
-				</div>
-			</article>
-		</section>
-
-		<a class="anchor" id="contact"></a>
-		<section class="flex-column reveal">
-			<div class="article-heading">
-				<h2>Get In Touch</h2>
-				<hr>
-			</div>
-			<article class="flex-column flex-space-center">
-				<p class="text-center">
-					Although I'm <span class="accent-color">currently looking for new opportunities</span>, my inbox is always open.
-					Whether you have a question or just want to say hi, I'll try my best to get back to you!
-				</p>
-				<a class="default-btn accent-btn" href="mailto:marinafcegner@sheepcs.de" target="_blank">Say Hello</a>
-			</article>
-		</section>
-		
-	</main>
-	
-	<footer>
-		<nav class="flex-space-center">
-			<span id="copyright">Marina Egner &copy; 2023</span>
-			<ul>
-				<li><a href="imprint.html">Imprint</a></li>
-				<li><a href="mailto:marinafcegner@sheepcs.de" target="_blank">Contact</a></li>
-			</ul>
-			<span id="created-by">
-				Created by M.Egner<br>
-				Inspired by <a href="https://v4.brittanychiang.com/" target="_blank">Brittany Chiang</a>
-			</span>
-		</nav>
-		<div class="logo-conatiner">
-			<a class="logo-link" href="https://marina-egner.sheepcs.de" target="_blank">
-				<h2 class="logo-text"><span class="logo-brace">&lbrace;</span> M: Egner <span class="logo-brace">&rbrace;</span></h2>
-			</a>
-			<div class="social-container">
-				<a href="https://github.com/magraina" target="_blank"><img class="social-logo" src="images/github.svg" alt="GitHub Logo"></a>
-				<a href="https://www.instagram.com/magraina/" target="_blank"><img class="social-logo" src="images/Instagram.svg" alt="Instagram Logo"></a>
-				<a href="https://www.linkedin.com/in/marina-egner-93193818a" target="_blank"><img class="social-logo" src="images/LinkedIn.png" alt="LinkedIn Logo"></a>
-				<a href="https://www.facebook.com/marina.egner.9/" target="_blank"><img class="social-logo" src="images/Facebook.png" alt="Facebook Logo"></a>
-			</div>
-		</div>
-	</footer>
-</body>
+		</footer>
+	</body>
 </html>
