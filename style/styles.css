@@ -1,23 +1,24 @@
-
 :root {
-	--font-sans: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+	--font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
 
-	--color-background: #1E1E1E;
-	--color-beyond-dark: #FFFFFF;
-	--accent-color: #FF1A75;
-	--footer-background: #0A0B0C;
-	--article-text: #FFFFFFBF;
-	--boarder-decent-color: #474747BB;
+	--color-background: #1e1e1e;
+	--color-beyond-dark: #ffffff;
+	--accent-color: #ff1a75;
+	--footer-background: #0a0b0c;
+	--article-text: #ffffffbf;
+	--boarder-decent-color: #474747bb;
 
 	--min-side-padding: 180px;
 }
-
 
 /************************************************
  * Main elements definition
  ************************************************/
 
-html, body {
+html,
+body {
 	font-family: var(--font-sans);
 	font-size: 18px;
 	font-weight: normal;
@@ -79,7 +80,7 @@ a:hover {
 
 .accent-btn {
 	color: var(--accent-color) !important;
-	background-color: #FFFFFF00;
+	background-color: #ffffff00;
 	border: 2px solid var(--accent-color);
 }
 
@@ -123,10 +124,10 @@ li::before {
 }
 
 .anchor {
-    display: block;
-    position: relative;
-    top: -100px;
-    visibility: hidden;
+	display: block;
+	position: relative;
+	top: -100px;
+	visibility: hidden;
 }
 .flex-row {
 	display: flex;
@@ -142,7 +143,6 @@ li::before {
 	justify-content: space-between;
 	align-items: center;
 }
-
 
 /************************************************
  * Header definition
@@ -211,7 +211,7 @@ header.not-start {
 
 header nav {
 	font-weight: 500;
-	gap: 25px
+	gap: 25px;
 }
 
 .headline {
@@ -227,12 +227,12 @@ header nav {
 }
 
 #headline-dynamic-accent,
-#headline-dynamic-accent+.headline-blink {
+#headline-dynamic-accent + .headline-blink {
 	color: var(--accent-color);
 	font-size: 32px;
 }
 
-#headline-dynamic-accent+.headline-blink {
+#headline-dynamic-accent + .headline-blink {
 	background-color: var(--accent-color);
 }
 
@@ -241,10 +241,9 @@ header nav {
 	color: var(--article-text);
 }
 
-.headline-quote>.headline-blink {
+.headline-quote > .headline-blink {
 	background-color: var(--article-text);
 }
-
 
 .headline-quote {
 	width: 500px;
@@ -272,7 +271,6 @@ header nav {
 	text-align: center;
 }
 
-
 /************************************************
  * main content
  ************************************************/
@@ -293,7 +291,7 @@ section {
 }
 
 article {
-	gap: 25px
+	gap: 25px;
 }
 
 article h3 {
@@ -314,7 +312,6 @@ article h3 {
 
 .tech-stack-container {
 	display: flex;
-	
 }
 
 .tech-stack-container a {
@@ -341,7 +338,7 @@ article h3 {
 }
 
 article p {
-	margin-block: 0 0
+	margin-block: 0 0;
 }
 
 #projects {
@@ -385,23 +382,23 @@ article p {
 	max-width: 435px;
 }
 
-#projects+section>article:nth-child(odd)>.project-header-container,
-#projects+section>article:nth-child(odd)>.project-body-container {
+#projects + section > article:nth-child(odd) > .project-header-container,
+#projects + section > article:nth-child(odd) > .project-body-container {
 	flex-direction: row-reverse;
 }
 
-#projects+section>article:nth-child(odd) .projects-date {
+#projects + section > article:nth-child(odd) .projects-date {
 	align-self: flex-end;
 	width: auto;
 }
 
-#contact>article {
+#contact > article {
 	padding-left: var(--min-side-padding);
 	padding-right: var(--min-side-padding);
 	align-items: center;
 }
 
-#contact>.accent-btn {
+#contact > .accent-btn {
 	width: fit-content;
 }
 
@@ -454,7 +451,7 @@ footer nav ul li:first-child {
 	list-style-type: none;
 }
 
-.logo-conatiner {
+.logo-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -501,7 +498,6 @@ footer .logo {
 	background-color: #555;
 }
 
-
 /************************************************
  * Responsive on tablets
  ************************************************/
@@ -546,13 +542,13 @@ footer .logo {
 		width: 80vw;
 		max-width: 80vw;
 	}
-	#projects+section>article:nth-child(odd)>.project-header-container {
+	#projects + section > article:nth-child(odd) > .project-header-container {
 		flex-direction: row;
 	}
-	#projects+section>article:nth-child(odd)>.project-body-container {
-	flex-direction: column;
+	#projects + section > article:nth-child(odd) > .project-body-container {
+		flex-direction: column;
 	}
-	#projects+section>article:nth-child(odd) .projects-date {
+	#projects + section > article:nth-child(odd) .projects-date {
 		align-self: unset;
 	}
 }
@@ -560,8 +556,8 @@ footer .logo {
 @media (max-width: 720px) {
 	footer nav {
 		flex-direction: column;
-		gap: 10px
-	}	
+		gap: 10px;
+	}
 	footer .logo-link {
 		display: none;
 	}
@@ -571,10 +567,8 @@ footer .logo {
 	}
 	.experience-container {
 		flex-direction: column;
-		
 	}
 }
-
 
 /************************************************
  * Responsive on mobile
@@ -610,7 +604,7 @@ footer .logo {
 
 @media (max-width: 500px) {
 	.project-header-container,
-	#projects+section>article:nth-child(odd)>.project-header-container {
+	#projects + section > article:nth-child(odd) > .project-header-container {
 		flex-direction: column;
 	}
 	article h3,
